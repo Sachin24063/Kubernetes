@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod       # Adding a name for the Pod
+  labels:
+    app: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+  nodeName: minikube    # Scheduling the Pod on a specific node
+

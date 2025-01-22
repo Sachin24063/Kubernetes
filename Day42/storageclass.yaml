@@ -1,0 +1,6 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: demo
+provisioner: rancher.io/local-path  # Use the same provisioner as the default one in your cluster
+
